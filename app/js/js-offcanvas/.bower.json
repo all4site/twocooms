@@ -1,0 +1,14 @@
+{
+  "name": "js-offcanvas",
+  "homepage": "https://github.com/vmitsaras/js-offcanvas",
+  "_release": "cb7611ebfb",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "cb7611ebfbd5b4e09d413080f0a08efa71654257"
+  },
+  "_source": "https://github.com/vmitsaras/js-offcanvas.git",
+  "_target": "*",
+  "_originalSource": "js-offcanvas",
+  "_direct": true
+}

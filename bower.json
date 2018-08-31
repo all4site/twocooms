@@ -1,0 +1,28 @@
+{
+  "name": "bower",
+  "description": "bower",
+  "main": "index.js",
+  "authors": [
+    "Kirill"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "all4site-fontawesome": "^0.0.1",
+    "animate.css": "^3.7.0",
+    "slick-carousel": "^1.8.1",
+    "jPlayer": "jplayer#^2.9.2",
+    "normalize.css": "^8.0.0",
+    "formstone": "^1.4.10",
+    "jquery-ui": "jqueryui#^1.12.1",
+    "css-hamburgers": "^0.9.3"
+  }
+}

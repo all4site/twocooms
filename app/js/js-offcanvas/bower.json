@@ -1,0 +1,20 @@
+{
+	"name": "all4site-menu",
+	"authors": [
+		"All4site <all4sitecomua@gmail.com>"
+	],
+	"description": "Выпадающее мобильное меню",
+	"main": [
+		"dist/_css/js-offcanvas.css",
+		"dist/_js/js-offcanvas.js"
+	],
+	"license": "MIT",
+	"homepage": "",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
+}

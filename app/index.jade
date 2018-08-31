@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		// build:css css/main.min.css
+		// bower:css
+		link(rel='stylesheet', href='js/all4site-fontawesome/dist/css/fontawesome-all.css')
+		link(rel='stylesheet', href='js/animate.css/animate.css')
+		link(rel='stylesheet', href='js/slick-carousel/slick/slick.css')
+		link(rel='stylesheet', href='js/normalize.css/normalize.css')
+		link(rel='stylesheet', href='js/css-hamburgers/dist/hamburgers.css')
+		// endbower
+		link(rel="stylesheet", href="css/main.min.css")
+		// endbuild
+		link(rel="icon", href="img/favicon.png")
+		title Document
+body
+
+	.onTop
+		a(href="#onTop" data-target="menu")
+			img(src="img/arrow-up-.svg", alt="")
+
+	a(href="#mmenu")#mbutton
+		.hamburger.hamburger--slider
+			span.hamburger-box
+				span.hamburger-inner
+	#mmenu.grid
+		ul.grid
+			li.grid
+				a(href="#about" data-target="menu").grid о группе
+			li.grid
+				a(href="#team" data-target="menu").grid команда
+			li.grid
+				a(href="#media" data-target="menu").grid медiа
+			li.grid
+				a(href="#contacts" data-target="menu").grid контакти
+			li.grid
+				a(href="music/TWOKOOMS tech rider.doc").grid райдер
+		.contact.grid
+			img(src="img/smartphone.svg", alt="")
+			span +38068 72 72 777
+			img(src="img/message.svg", alt="")
+			span twokooms@gmail.com
+		.socialMmenu.grid
+			a(href="https://facebook.com/twokooms/" target="_blank")
+				.socialBlockMmenu.grid
+					.fab.fa-facebook-f
+			a(href="https://www.youtube.com/channel/UCT995rJ-xKWeZCeDjstCUJw/featured?disable_polymer=1" target="_blank")
+				.socialBlockMmenu.grid
+					.fab.fa-youtube
+			a(href="https://www.instagram.com/twokooms/" target="_blank")
+				.socialBlockMmenu.grid
+					.fab.fa-instagram
+	nav
+		.wrapper#onTop
+			.menu.grid
+				.logo.Left.grid
+					img(src="img/logo.png", alt="")
+				ul
+					li
+						a(href="#about" data-target="menu") о группе
+					li
+						a(href="#team" data-target="menu") команда
+					li
+						a(href="#media" data-target="menu") медiа
+					li
+						a(href="#contacts" data-target="menu") контакти
+					li
+						a(href="music/TWOKOOMS tech rider.doc") райдер
+				.logo.Right.grid
+					img(src="img/logo.png", alt="")
+	.slider.grid
+		.slide
+			img(src="img/slide1.jpg", alt="")
+		.slide
+			img(src="img/slide2.jpg", alt="")
+		.slide
+			img(src="img/slide3.jpg", alt="")
+	.wrapper#about
+		h2 о группе
+		.about.grid
+			.img.grid
+				img(src="img/about1.jpg", alt="")
+			.text
+				p Музичний проект «Two Kooms» - це сучасний					український гурт, який виконує свої пісні в стилі фанк, поп та хіп-хоп. Створений у 2018 році в Києві.
+				p Ідея створення гурту була започаткована українським співаком Олександром Павликом та композитором Ярославом Микитиним, які вирішили об’єднати свою творчість та створити український дует.
+				p В житті вони давно товаришують, навіть стали кумами, тому й назва утворилась сама собою – « Two Kooms».
+			.text
+				p Продюсером став Дмитро Говоренко.
+
+				p 11 липня 2018 року у місті Києві відбулася презентація гурту Two Kooms, яка представила новий формат на українській сцені та свою концертну програму.
+
+				p Пісні гурту «Two Kooms» вже звучать на рейтингових радіостанціях та музичних каналах України.
+
+				p У 2018 році вийшов перший кліп на пісню&nbsp
+					a(href="#mers" data-target="menu") «Мерседес»
+
+			.img.grid
+				img(src="img/about2.jpg", alt="")
+	.team
+		.wrapper#team
+			h2 команда
+			.ourteam.grid
+				.img.grid
+					img(src="img/dima.png", alt="")
+					.text
+						b Дмитро Говоренко
+						br
+						span продюсер групи «Two Kooms», засновник та директор продакшн студії PAVLIK GOVOR1 SOUND – MUSIC, а також Дмитро пише тексти для пісень.
+				.img.grid
+					img(src="img/yaroslav.png", alt="")
+					.text
+						b Ярослав Микитин
+						br
+						span композитор та учасник групи «Two Kooms».
+
+				.img.grid
+					img(src="img/alex.png", alt="")
+					.text
+						b Олександр Павлік
+						br
+						span заслужений артист України та учасник групи  «Two Kooms».
+	.wrapper
+		.media#media
+			h2 медиа
+			.mediaBlock.grid
+				.video.grid
+					.imgVideo.grid#mers
+						img(src="img/video1.png", alt="")
+					.youVideo
+						<iframe  width="100%"  height="100%" src="https://www.youtube.com/embed/Uj5kuP7ZleI?rel=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					h4 мерседес
+				.video.grid
+					.imgVideo.grid
+						img(src="img/video2.png", alt="")
+					.youVideo
+						<iframe id="video" width="100%"  height="100%" src="https://www.youtube.com/embed/GZnWdSnPyWo?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					h4 затока
+				.player.grid
+					.jplayer_1
+					.player_container_1.grid
+						.play.grid
+							.fa.fa-play
+							.fa.fa-pause
+							.fa.fa-stop
+						.name.grid
+							span мерседес ремикс
+						.jp-progress.grid
+							.jp-seek-bar
+								.jp-play-bar
+						.jp-volume-controls.grid
+							.fas.fa-volume-up
+							.jp-volume-bar
+								.jp-volume-bar-value
+					.jplayer_2
+					.player_container_2.grid
+						.play.grid
+							.fa.fa-play
+							.fa.fa-pause
+							.fa.fa-stop
+						.name.grid
+							span мерседес
+						.jp-progress.grid
+							.jp-seek-bar
+								.jp-play-bar
+						.jp-volume-controls.grid
+							.fas.fa-volume-up
+							.jp-volume-bar
+								.jp-volume-bar-value
+					.jplayer_3
+					.player_container_3.grid
+						.play.grid
+							.fa.fa-play
+							.fa.fa-pause
+							.fa.fa-stop
+						.name.grid
+							span интро
+						.jp-progress.grid
+							.jp-seek-bar
+								.jp-play-bar
+						.jp-volume-controls.grid
+							.fas.fa-volume-up
+							.jp-volume-bar
+								.jp-volume-bar-value
+				.reklama
+					span Група  «Two Kooms» записує свої хіти на студії звукозапису&nbsp
+					br.hide
+					a(href="#!") PAVLIK GOVOR1 SOUND – MUSIC
+	.contacts
+		.wrapper#contacts
+			h2 контакты
+			.contactBlock.grid
+				.adds.grid
+					.phone.grid
+						.img
+							img(src="img/smartphone.svg", alt="")
+						.text
+							span +38068 72 72 777
+							br
+							span Владлена
+					.email.grid
+						.img
+							img(src="img/message.svg", alt="")
+						.text
+							span twokooms@gmail.com
+				.feedback.grid
+					form(action="mail.php" method="POST").feedback.grid#form
+						#labelForm.grid
+							//- .img.grid
+							img(src="img/user.svg", alt="")
+							input(name="name" type="text")
+							label имя
+							//- .img.grid
+							img(src="img/message.svg", alt="")
+							input(type="text" name="email")
+							label email
+						textarea(name="somText", cols="30", rows="10")
+						.btn.pulse
+							input(type="submit" value="ОТПРАВИТЬ")
+				.social.grid
+					a(href="https://m.facebook.com/twokooms/ " target="_blank")
+						.socialBlock.grid.z-depth-2.hoverable
+							.fab.fa-facebook-f
+					a(href="https://www.youtube.com/channel/UCT995rJ-xKWeZCeDjstCUJw/featured?disable_polymer=1" target="_blank")
+						.socialBlock.grid.z-depth-2.hoverable
+							.fab.fa-youtube
+					a(href="https://www.instagram.com/twokooms/" target="_blank")
+						.socialBlock.grid.z-depth-2.hoverable
+							.fab.fa-instagram
+	.footer.grid
+		.rights
+			span @2018 all right reserved
+		.design
+			a(href="http://all4site.com.ua" target="_blank")
+				span created by all4site stydio
+	// build:js js/main.min.js
+	// bower:js
+	script(src='js/jquery/dist/jquery.js')
+	script(src='js/slick-carousel/slick/slick.js')
+	script(src='js/jPlayer/dist/jplayer/jquery.jplayer.js')
+	script(src='js/jquery-ui/jquery-ui.js')
+	// endbower
+	script(src="js/main.js")
+	// endbuild

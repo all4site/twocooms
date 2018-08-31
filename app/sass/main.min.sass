@@ -1,0 +1,457 @@
+@import vars
+@import fonts
+@import base
+@import pulse
+@import zdepth
+
+body
+	transition: all 1s ease
+	left: 0
+
+.hide
+	display: none
+
+.onTop
+	width: 60px
+	position: fixed
+	z-index: 999
+	right: 40px
+	bottom: 20px
+	display: none
+
+.full
+	width: 100% !important
+	height: 100% !important
+	background: fade-out($black, 0.7)
+
+.leftSlide
+	left: 200px
+	transition: all 1s ease
+
+.mobileMenu
+	position: fixed
+	height: 100px
+	width: 100px
+	z-index: 999
+	display: none
+
+#mbutton
+	position: fixed
+	z-index: 999
+	display: none
+
+	.hamburger-inner,
+	.hamburger-inner:before,
+	.hamburger-inner:after
+		background-color: $button
+		height: 2px
+		border-right: none
+
+#mmenu
+	grid-template-columns: 200px
+	grid-template-rows: 1fr min-content min-content
+	position: fixed
+	height: 100vh
+	z-index: 999
+	background: $accent
+	margin-left: -200px
+
+	a
+		margin-left: 20px
+
+		&:hover
+			color: $white
+
+	ul
+		margin: 0
+		padding: 0
+		grid-template-columns: 1fr
+		align-content: start
+
+
+	li
+		padding: 20px 0
+		transition: background 0.5s ease
+		border: 1px solid transparent
+
+		&:hover
+			background: lighten($accent, 10%)
+
+		&:not(:first-child):hover
+			border-top: 1px solid fade-out($white, 0.7)
+			border-bottom: 1px solid fade-out($white, 0.7)
+
+	.contact
+		grid-template-columns: repeat(2, min-content)
+		max-height: 100px
+		justify-items: center
+		align-items: center
+		margin-top: 50px
+		background: lighten($accent, 6%)
+		border-top: 1px solid fade-out($white, 0.7)
+		border-bottom: 1px solid fade-out($white, 0.7)
+		color: $white
+		grid-row-gap: 10px
+
+		img
+			width: 20px
+			margin-right: 15px
+			padding: 10px 10px
+
+		span:first-of-type
+			justify-self: start
+
+		span
+			font-size: 0.8rem
+
+	.socialMmenu
+		grid-template-columns: repeat(3, min-content)
+		align-self: end
+		padding: 50px 0 20px
+
+		.socialBlockMmenu
+			color: $white
+			font-size: 2.5rem
+
+		.fab
+			transition: color 0.5s ease
+
+			&:hover
+				color: $button
+
+.btn
+	transition: background 0.5s ease !important
+
+	&:hover
+		background: $bace
+
+h2
+	text-transform: uppercase
+	color: $bace
+	text-align: center
+	margin: 30px 0
+
+li
+	display: inline-block
+	color: $white
+
+	a
+		color: $white
+		padding: 10px
+
+		&:hover
+			color: $button
+
+a
+	text-transform: uppercase
+	font-size: 20px
+	text-decoration: none
+	color: $button
+	transition: color 0.5s ease
+
+	&:hover
+		color: $bace
+
+.wrapper
+	display: grid
+	grid-template-columns: minmax(300px, 1280px)
+	justify-content: center
+	padding: 0 20px
+
+.menu
+	grid-template-columns: minmax(100px, 120px) 1fr minmax(100px, 120px)
+
+nav
+	background: $black
+
+	ul
+		justify-self: center
+
+img
+	width: 100%
+	height: auto
+
+.slider
+	position: relative
+	height: 100%
+
+.left
+	position: absolute
+	z-index: 1
+	align-self: center
+
+.right
+	position: absolute
+	z-index: 1
+	align-self: center
+	right: 0
+
+.arrow
+	width: 50px
+	margin: 0 50px
+
+.about
+	grid-template-columns: repeat(2, 1fr)
+	grid-gap: 15px
+
+	.img
+		height: 100%
+
+	.text
+		background: fade-out($black, 0.98)
+		padding: 30px
+		font-size: 1.3rem
+
+.team
+	background: $accent
+	margin-top: 30px
+
+.ourteam
+	grid-template-columns: repeat(3, 1fr)
+	grid-column-gap: 70px
+	margin-bottom: 50px
+
+	.img
+		grid-template-rows: 1fr minmax(100px, 150px)
+		grid-row-gap: 50px
+
+		.text
+			background: fade-out($white, 0.9)
+			color: $white
+			padding: 20px 20px
+			text-align: center
+
+.media
+	background: fade-out($black, 0.97)
+	margin-top: 30px
+
+	.mediaBlock
+		grid-template-columns: minmax(300px, 1000px)
+		justify-content: center
+
+		.video
+			margin-bottom: 50px
+			text-align: center
+			text-transform: uppercase
+			position: relative
+
+			.youVideo
+				z-index: 9999
+				height: 79%
+				width: 100%
+				position: absolute
+				z-index: 1
+				display: none
+
+			.imgVideo
+				position: relative
+				align-items: center
+				justify-items: center
+				z-index: 10
+
+				&::after
+					content: ""
+					width: 60px
+					height: 60px
+					background: url("../img/play-button.png")
+					position: absolute
+					background-position: center
+					background-size: cover
+					cursor: pointer
+
+			.playarrow
+				position: absolute
+				width: 50px
+				z-index: 1
+
+.player
+	grid-row-gap: 20px
+
+.player_container_1,
+.player_container_2,
+.player_container_3
+	grid-template-columns: max-content 1fr 3fr 1fr
+	grid-row-gap: 50px
+	grid-column-gap: 20px
+	align-items: center
+
+	.name
+		font-size: 1rem
+		// margin-top: -5px
+		text-align: center
+		font-weight: 100
+		text-transform: uppercase
+
+.jp-seek-bar
+	height: 10px
+	background: $black
+
+	.jp-play-bar
+		height: 10px
+		background: $button
+
+.jp-volume-controls
+	grid-template-columns: min-content 1fr
+	grid-column-gap: 10px
+	align-items: center
+
+.jp-volume-bar
+	height: 10px
+	background: $black
+
+	.jp-volume-bar-value
+		height: 10px
+		background: $button
+
+.play
+	grid-template-columns: 1fr 1fr
+
+	.fa
+		font-size: 1.5rem
+		margin: 0 5px
+
+.reklama
+	border: 1px solid $button
+	justify-self: center
+	margin: 50px 0
+	padding: 20px 50px
+
+.contacts
+	background: $accent
+
+.contactBlock
+	grid-template-columns: 1fr 2fr 1fr
+	grid-template-rows: repeat(4, min-content)
+	grid-column-gap: 100px
+	align-items: start
+	margin-bottom: 50px
+
+	.adds
+		grid-template-columns: 1fr
+		justify-self: center
+		grid-row-gap: 50px
+
+		.img
+			justify-self: center
+			width: 60px
+
+		.text
+			text-align: center
+			color: $white
+
+			span:first-child
+				font-size: 1.6rem
+
+		.phone
+			grid-row-gap: 20px
+
+.social
+	justify-content: center
+	grid-row-gap: 20px
+
+.socialBlock
+	width: 100px
+	height: 100px
+	background: inherit
+	border: 1px solid $white
+	border-radius: 50%
+
+	.fab
+		justify-self: center
+		align-self: center
+		font-size: 2rem
+		color: $white
+
+.feedback
+	grid-template-columns: 1fr
+	color: $white
+
+	.img
+		margin-bottom: -20px
+		grid-template-columns: min-content 1fr
+
+	img
+		width: 20px
+		height: 20px
+		margin-left: -25px
+		margin-right: 5px
+		margin-bottom: -15px
+
+	input
+		background: inherit
+		border: none
+		border-bottom: 1px solid $white
+		margin-bottom: 40px
+		z-index: 1
+		color: $white
+		outline: none
+
+	input[type=submit]
+		border-bottom: none
+		width: 100%
+		height: 100%
+		display: grid
+		margin: 0
+		padding: 20px 35px
+		outline: none
+		border-radius: 5px
+
+	.btn
+		padding: 0
+
+	label
+		cursor: text
+		transition: all 0.5s ease
+		display: grid
+		transform: translateY(-68px)
+		transform-origin: 0% 100%
+
+	textarea
+		background: inherit
+		border: 1px solid $white
+		color: $white
+
+.labelClick
+	transform: translateY(-90px) scale(0.8) !important
+	color: fade-out($white, 0.5)
+
+.btn
+	background: $button
+	position: relative
+	text-transform: uppercase
+	color: $white
+	text-align: center
+	padding: 10px 30px
+	justify-self: center
+	border-radius: 5px
+	margin-top: 20px
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2)
+	cursor: pointer
+
+.footer
+	background: $black
+	height: 100px
+	color: $white
+
+	.design
+		justify-self: end
+		align-self: end
+		grid-column: 1
+		grid-row: 1
+		margin-right: 20px
+
+		span
+			font-size: 0.8rem
+
+		a
+			color: fade-out($white, 0.9)
+			text-transform: lowercase
+
+	.rights
+		align-self: center
+		justify-self: center
+		grid-column: 1
+		grid-row: 1
+
+// ADAPTIVE
+@import media
