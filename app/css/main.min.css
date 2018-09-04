@@ -374,7 +374,8 @@ img {
     grid-template-columns: minmax(300px, 1000px);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    padding-bottom: 50px; }
     .media .mediaBlock .video {
       margin-bottom: 50px;
       text-align: center;
